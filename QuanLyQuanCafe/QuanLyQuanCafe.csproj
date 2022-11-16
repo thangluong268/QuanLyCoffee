@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1E96153-5F75-43F0-90C6-537D78E0C10C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyQuanCafe</RootNamespace>
+    <AssemblyName>QuanLyQuanCafe</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BSLayer\BLAccount.cs" />
+    <Compile Include="BSLayer\BLAccountManager.cs" />
+    <Compile Include="BSLayer\BLBill.cs" />
+    <Compile Include="BSLayer\BLBillInfo.cs" />
+    <Compile Include="BSLayer\BLBillPay.cs" />
+    <Compile Include="BSLayer\BLForgetPass.cs" />
+    <Compile Include="BSLayer\BLLogin.cs" />
+    <Compile Include="BSLayer\BLMenu.cs" />
+    <Compile Include="BSLayer\BLPos.cs" />
+    <Compile Include="BSLayer\BLReport.cs" />
+    <Compile Include="BSLayer\BLSalary.cs" />
+    <Compile Include="BSLayer\BLStaff.cs" />
+    <Compile Include="BSLayer\BLTable.cs" />
+    <Compile Include="BSLayer\BLType.cs" />
+    <Compile Include="DBLayer\DBMain.cs" />
+    <Compile Include="LoadForPos\MenuCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadForPos\MenuCard.Designer.cs">
+      <DependentUpon>MenuCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadForPos\theOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadForPos\theOrder.Designer.cs">
+      <DependentUpon>theOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyCaPheDataSet.cs">
+      <DependentUpon>QuanLyCaPheDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyCaPheDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyCaPheDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Views\fAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\fAccount.Designer.cs">
+      <DependentUpon>fAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\fAccountManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\fAccountManager.Designer.cs">
+      <DependentUpon>fAccountManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\fBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\fBill.Designer.cs">
+      <DependentUpon>fBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\fBillInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\fBillInfo.Designer.cs">
+      <DependentUpon>fBillInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\fBillPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\fBillPay.Designer.cs">
+      <DependentUpon>fBillPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\fForgetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\fForgetPass.Designer.cs">
+      <DependentUpon>fForgetPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\fManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\fManager.Designer.cs">
+      <DependentUpon>fManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\fMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\fMenu.Designer.cs">
+      <DependentUpon>fMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\fPos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\fPos.Designer.cs">
+      <DependentUpon>fPos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\fReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\fReport.Designer.cs">
+      <DependentUpon>fReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\fSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\fSalary.Designer.cs">
+      <DependentUpon>fSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\fStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\fStaff.Designer.cs">
+      <DependentUpon>fStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\fTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\fTable.Designer.cs">
+      <DependentUpon>fTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\fType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\fType.Designer.cs">
+      <DependentUpon>fType.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LoadForPos\MenuCard.resx">
+      <DependentUpon>MenuCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadForPos\theOrder.resx">
+      <DependentUpon>theOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rdlc\BillPay.rdlc" />
+    <EmbeddedResource Include="Views\fAccount.resx">
+      <DependentUpon>fAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\fAccountManager.resx">
+      <DependentUpon>fAccountManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\fBill.resx">
+      <DependentUpon>fBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\fBillInfo.resx">
+      <DependentUpon>fBillInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\fBillPay.resx">
+      <DependentUpon>fBillPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\fForgetPass.resx">
+      <DependentUpon>fForgetPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\fManager.resx">
+      <DependentUpon>fManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\fMenu.resx">
+      <DependentUpon>fMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\fPos.resx">
+      <DependentUpon>fPos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\fReport.resx">
+      <DependentUpon>fReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\fSalary.resx">
+      <DependentUpon>fSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\fStaff.resx">
+      <DependentUpon>fStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\fTable.resx">
+      <DependentUpon>fTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\fType.resx">
+      <DependentUpon>fType.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QuanLyCaPheDataSet.xsc">
+      <DependentUpon>QuanLyCaPheDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCaPheDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyCaPheDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyCaPheDataSet.xss">
+      <DependentUpon>QuanLyCaPheDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\cakee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drinkicon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drinkicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cross-mark-button-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
