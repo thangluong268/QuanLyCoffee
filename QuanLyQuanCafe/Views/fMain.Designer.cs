@@ -41,7 +41,6 @@ namespace QuanLyQuanCafe
             this.pnlChuaFormChild = new System.Windows.Forms.Panel();
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            this.pnlChuaFormChild.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -60,7 +59,7 @@ namespace QuanLyQuanCafe
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1560, 31);
+            this.menuStrip1.Size = new System.Drawing.Size(1827, 31);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -133,18 +132,17 @@ namespace QuanLyQuanCafe
             // pnlChuaFormChild
             // 
             this.pnlChuaFormChild.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlChuaFormChild.Controls.Add(this.btnDangXuat);
             this.pnlChuaFormChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlChuaFormChild.Location = new System.Drawing.Point(0, 31);
             this.pnlChuaFormChild.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlChuaFormChild.Name = "pnlChuaFormChild";
-            this.pnlChuaFormChild.Size = new System.Drawing.Size(1560, 719);
+            this.pnlChuaFormChild.Size = new System.Drawing.Size(1827, 891);
             this.pnlChuaFormChild.TabIndex = 1;
             // 
             // btnDangXuat
             // 
             this.btnDangXuat.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangXuat.Location = new System.Drawing.Point(1326, 2);
+            this.btnDangXuat.Location = new System.Drawing.Point(1596, 0);
             this.btnDangXuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(231, 42);
@@ -158,7 +156,8 @@ namespace QuanLyQuanCafe
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1560, 750);
+            this.ClientSize = new System.Drawing.Size(1827, 922);
+            this.Controls.Add(this.btnDangXuat);
             this.Controls.Add(this.pnlChuaFormChild);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -170,7 +169,6 @@ namespace QuanLyQuanCafe
             this.Load += new System.EventHandler(this.fMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.pnlChuaFormChild.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -27,8 +27,8 @@ namespace QuanLyQuanCafe.Views
         {
 
             this.p_LayCTHDChoThanhToanTableAdapter.FillBy(
-                this.quanLyCaPheDataSet.p_LayCTHDChoThanhToan, 
-                fPos.maHD, fAccountManager.maNV, fPos.maBanDangChon);
+                this.quanLyCaPheDataSet1.p_LayCTHDChoThanhToan, 
+                fPos.maHD, fProfile.maNV, fPos.maBanDangChon);
 
             this.reportViewer1.RefreshReport();
         }

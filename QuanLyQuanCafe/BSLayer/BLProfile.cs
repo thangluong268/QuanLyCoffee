@@ -8,10 +8,10 @@ using QuanLyQuanCafe.DBLayer;
 
 namespace QuanLyQuanCafe.BSLayer
 {
-    class BLAccountManager
+    class BLProfile
     {
         DBMain db = null;
-        public BLAccountManager()
+        public BLProfile()
         {
             db = new DBMain();
         }

@@ -67,7 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BSLayer\BLAccount.cs" />
-    <Compile Include="BSLayer\BLAccountManager.cs" />
+    <Compile Include="BSLayer\BLProfile.cs" />
     <Compile Include="BSLayer\BLBill.cs" />
     <Compile Include="BSLayer\BLBillInfo.cs" />
     <Compile Include="BSLayer\BLBillPay.cs" />
@@ -103,6 +103,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyCaPheDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyCaPheDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyCaPheDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Views\fAccount.cs">
       <SubType>Form</SubType>
@@ -110,11 +115,11 @@
     <Compile Include="Views\fAccount.Designer.cs">
       <DependentUpon>fAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\fAccountManager.cs">
+    <Compile Include="Views\fPofile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\fAccountManager.Designer.cs">
-      <DependentUpon>fAccountManager.cs</DependentUpon>
+    <Compile Include="Views\fPofile.Designer.cs">
+      <DependentUpon>fPofile.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\fBill.cs">
       <SubType>Form</SubType>
@@ -152,11 +157,11 @@
     <Compile Include="Views\fMain.Designer.cs">
       <DependentUpon>fMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\fManager.cs">
+    <Compile Include="Views\fHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\fManager.Designer.cs">
-      <DependentUpon>fManager.cs</DependentUpon>
+    <Compile Include="Views\fHome.Designer.cs">
+      <DependentUpon>fHome.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\fMenu.cs">
       <SubType>Form</SubType>
@@ -220,8 +225,8 @@
     <EmbeddedResource Include="Views\fAccount.resx">
       <DependentUpon>fAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\fAccountManager.resx">
-      <DependentUpon>fAccountManager.cs</DependentUpon>
+    <EmbeddedResource Include="Views\fPofile.resx">
+      <DependentUpon>fPofile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\fBill.resx">
       <DependentUpon>fBill.cs</DependentUpon>
@@ -241,8 +246,8 @@
     <EmbeddedResource Include="Views\fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\fManager.resx">
-      <DependentUpon>fManager.cs</DependentUpon>
+    <EmbeddedResource Include="Views\fHome.resx">
+      <DependentUpon>fHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\fMenu.resx">
       <DependentUpon>fMenu.cs</DependentUpon>
@@ -290,6 +295,17 @@
     </None>
     <None Include="QuanLyCaPheDataSet.xss">
       <DependentUpon>QuanLyCaPheDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCaPheDataSet1.xsc">
+      <DependentUpon>QuanLyCaPheDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCaPheDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyCaPheDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyCaPheDataSet1.xss">
+      <DependentUpon>QuanLyCaPheDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Resources\cakee.jpg" />
   </ItemGroup>

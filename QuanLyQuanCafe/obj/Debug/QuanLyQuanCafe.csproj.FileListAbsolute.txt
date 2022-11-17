@@ -243,14 +243,12 @@ D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.Views.theOrder.resources
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.Properties.Resources.resources
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.fAccount.resources
-D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.fAccountManager.resources
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.Views.fBill.resources
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.Views.fBillInfo.resources
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.Views.fBillPay.resources
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.Views.fForgetPass.resources
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.FLogin.resources
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.fMain.resources
-D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.fManager.resources
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.fMenu.resources
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.Views.fPos.resources
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.Views.fReport.resources
@@ -265,3 +263,5 @@ D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.csproj.CopyComplete
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.exe
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.pdb
+D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.fProfile.resources
+D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.fHome.resources

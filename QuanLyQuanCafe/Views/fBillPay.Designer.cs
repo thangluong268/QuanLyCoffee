@@ -33,10 +33,10 @@ namespace QuanLyQuanCafe.Views
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.pLayCTHDChoThanhToanBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quanLyCaPheDataSet = new QuanLyQuanCafe.QuanLyCaPheDataSet();
-            this.p_LayCTHDChoThanhToanTableAdapter = new QuanLyQuanCafe.QuanLyCaPheDataSetTableAdapters.p_LayCTHDChoThanhToanTableAdapter();
+            this.quanLyCaPheDataSet1 = new QuanLyQuanCafe.QuanLyCaPheDataSet1();
+            this.p_LayCTHDChoThanhToanTableAdapter = new QuanLyQuanCafe.QuanLyCaPheDataSet1TableAdapters.p_LayCTHDChoThanhToanTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pLayCTHDChoThanhToanBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyCaPheDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyCaPheDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
@@ -55,12 +55,12 @@ namespace QuanLyQuanCafe.Views
             // pLayCTHDChoThanhToanBindingSource
             // 
             this.pLayCTHDChoThanhToanBindingSource.DataMember = "p_LayCTHDChoThanhToan";
-            this.pLayCTHDChoThanhToanBindingSource.DataSource = this.quanLyCaPheDataSet;
+            this.pLayCTHDChoThanhToanBindingSource.DataSource = this.quanLyCaPheDataSet1;
             // 
-            // quanLyCaPheDataSet
+            // quanLyCaPheDataSet1
             // 
-            this.quanLyCaPheDataSet.DataSetName = "QuanLyCaPheDataSet";
-            this.quanLyCaPheDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.quanLyCaPheDataSet1.DataSetName = "QuanLyCaPheDataSet1";
+            this.quanLyCaPheDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // p_LayCTHDChoThanhToanTableAdapter
             // 
@@ -77,7 +77,7 @@ namespace QuanLyQuanCafe.Views
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.fBillPay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pLayCTHDChoThanhToanBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyCaPheDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyCaPheDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -85,7 +85,7 @@ namespace QuanLyQuanCafe.Views
         #endregion
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource pLayCTHDChoThanhToanBindingSource;
-        private QuanLyCaPheDataSet quanLyCaPheDataSet;
-        private QuanLyCaPheDataSetTableAdapters.p_LayCTHDChoThanhToanTableAdapter p_LayCTHDChoThanhToanTableAdapter;
+        private QuanLyCaPheDataSet1 quanLyCaPheDataSet1;
+        private QuanLyCaPheDataSet1TableAdapters.p_LayCTHDChoThanhToanTableAdapter p_LayCTHDChoThanhToanTableAdapter;
     }
 }

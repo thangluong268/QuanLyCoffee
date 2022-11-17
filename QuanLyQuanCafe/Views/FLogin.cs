@@ -46,23 +46,29 @@ namespace QuanLyQuanCafe
             tenTaiKhoan = this.txtUsername.Text.Trim();
             matKhau = this.txtPass.Text.Trim();
 
-            int check = CheckLogin(txtUsername.Text.Trim(), txtPass.Text.Trim(), rbManager.Checked, rbStaff.Checked);
+            try
+            {
+                int check = CheckLogin(txtUsername.Text.Trim(), txtPass.Text.Trim(), rbManager.Checked, rbStaff.Checked);
 
-            if (check == -1)
-                MessageBox.Show("Vui lòng chọn quyền đăng nhập!");
-            else if (check == 1)
-            {
-                Form formManager = new fMain();
-                formManager.ShowDialog();
+                if (check == -1)
+                    MessageBox.Show("Vui lòng chọn quyền đăng nhập!");
+                else if (check == 1)
+                {
+                    Form formManager = new fMain();
+                    formManager.ShowDialog();
+                }
+                else if (check == 2)
+                {
+                    fProfile.maNV = txtUsername.Text.Trim();
+                    Form formStaff = new fHome();
+                    formStaff.ShowDialog();
+                }
             }
-            else if (check == 2)
+            catch(Exception)
             {
-                fAccountManager.maNV = txtUsername.Text.Trim();
-                Form formStaff = new fManager();
-                formStaff.ShowDialog();
-            }
-            else
                 MessageBox.Show("Tài khoản hoặc mật khẩu không đúng!");
+            }
+                
         }
 
         private void btnExit_Click(object sender, EventArgs e)

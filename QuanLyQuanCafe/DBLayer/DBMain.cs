@@ -32,7 +32,7 @@ namespace QuanLyQuanCafe.DBLayer
             // Kiểm tra đối tượng kết nối
             if (conn.State == ConnectionState.Open)
                 conn.Close();
-            //conn.Open();
+            conn.Open();
 
             comm.Connection = conn;
             comm.CommandText = strPro;

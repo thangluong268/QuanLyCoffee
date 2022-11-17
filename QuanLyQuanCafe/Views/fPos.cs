@@ -263,7 +263,7 @@ namespace QuanLyQuanCafe.Views
                         checkMaHD = (bool)dtHDNew.Rows[0][0];
                     }    
                     string ngayTao = DateTime.Now.ToString("yyyy/MM/dd");
-                    string maNV = fAccountManager.maNV;
+                    string maNV = fProfile.maNV;
                     try
                     {
                         blPos.ThemHoaDon(newMaHD, maNV, maBanDangChon, ngayTao, 0, 0, 0);

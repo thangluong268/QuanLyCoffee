@@ -12,14 +12,14 @@ using QuanLyQuanCafe.BSLayer;
 
 namespace QuanLyQuanCafe
 {
-    public partial class fAccountManager : Form
+    public partial class fProfile : Form
     {
-        BLAccountManager blAccountManager = new BLAccountManager();
-        DataTable dtAccountManager = new DataTable();
+        BLProfile blProfile = new BLProfile();
+        DataTable dtProfile = new DataTable();
 
         public static string maNV { get; set; }
 
-        public fAccountManager()
+        public fProfile()
         {
             InitializeComponent();
         }
@@ -28,24 +28,24 @@ namespace QuanLyQuanCafe
             try
             {
                 // Khỏi tạo DataTable
-                dtAccountManager = new DataTable();
-                dtAccountManager.Clear();
+                dtProfile = new DataTable();
+                dtProfile.Clear();
 
                 // Đổ dữ liệu từ DataSet lấy được từ database vào DataTable
-                DataSet ds = blAccountManager.LoadNhanVienTheoMa(MaNV);
-                dtAccountManager = ds.Tables[0]; // Lấy tất cả dữ liệu
+                DataSet ds = blProfile.LoadNhanVienTheoMa(MaNV);
+                dtProfile = ds.Tables[0]; // Lấy tất cả dữ liệu
 
-                txtMaNV.Text = dtAccountManager.Rows[0][0].ToString();
-                txtHoTen.Text = dtAccountManager.Rows[0][1].ToString();
-                txtDiaChi.Text = dtAccountManager.Rows[0][2].ToString();
-                txtSDT.Text = dtAccountManager.Rows[0][3].ToString();
-                dtpNgayVaoLam.Text = dtAccountManager.Rows[0][4].ToString();
-                txtSoNgayLam.Text = dtAccountManager.Rows[0][5].ToString();
-                cbGioiTinh.Checked = (bool)dtAccountManager.Rows[0][6];
-                dtpNgaySinh.Text = dtAccountManager.Rows[0][7].ToString();
-                txtChucVu.Text = dtAccountManager.Rows[0][8].ToString();
+                txtMaNV.Text = dtProfile.Rows[0][0].ToString();
+                txtHoTen.Text = dtProfile.Rows[0][1].ToString();
+                txtDiaChi.Text = dtProfile.Rows[0][2].ToString();
+                txtSDT.Text = dtProfile.Rows[0][3].ToString();
+                dtpNgayVaoLam.Text = dtProfile.Rows[0][4].ToString();
+                txtSoNgayLam.Text = dtProfile.Rows[0][5].ToString();
+                cbGioiTinh.Checked = (bool)dtProfile.Rows[0][6];
+                dtpNgaySinh.Text = dtProfile.Rows[0][7].ToString();
+                txtChucVu.Text = dtProfile.Rows[0][8].ToString();
 
-                txtUserName.Text = dtAccountManager.Rows[0][0].ToString();
+                txtUserName.Text = dtProfile.Rows[0][0].ToString();
 
                 this.btnChangePass.Enabled = true;
 
@@ -57,7 +57,7 @@ namespace QuanLyQuanCafe
             
         }
 
-        private void fAccountManager_Load(object sender, EventArgs e)
+        private void fProfile_Load(object sender, EventArgs e)
         {
             LoadData(maNV);
             showChildPanel(pnlEditAccount);
@@ -100,7 +100,7 @@ namespace QuanLyQuanCafe
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            DataSet ds = blAccountManager.KiemTraDangNhap(maNV, txtPass.Text.Trim());
+            DataSet ds = blProfile.KiemTraDangNhap(maNV, txtPass.Text.Trim());
             DataTable dt = ds.Tables[0];
             int check = Int32.Parse(dt.Rows[0][0].ToString());
             if (txtNewPass.Text.Trim() == txtRePass.Text.Trim() && check == 1)
@@ -132,5 +132,6 @@ namespace QuanLyQuanCafe
                 MessageBox.Show("Mật khẩu không hợp lệ!");
             }
         }
+
     }
 }
