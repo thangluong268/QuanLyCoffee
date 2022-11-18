@@ -32,8 +32,8 @@ namespace QuanLyQuanCafe
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.btnTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPos = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnlChuaFormChild = new System.Windows.Forms.Panel();
             this.btnDangXuat = new System.Windows.Forms.Button();
+            this.pnlChuaFormChild = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,14 +67,6 @@ namespace QuanLyQuanCafe
             this.btnPos.Text = "Pos";
             this.btnPos.Click += new System.EventHandler(this.btnPos_Click);
             // 
-            // pnlChuaFormChild
-            // 
-            this.pnlChuaFormChild.Location = new System.Drawing.Point(12, 48);
-            this.pnlChuaFormChild.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnlChuaFormChild.Name = "pnlChuaFormChild";
-            this.pnlChuaFormChild.Size = new System.Drawing.Size(1917, 786);
-            this.pnlChuaFormChild.TabIndex = 1;
-            // 
             // btnDangXuat
             // 
             this.btnDangXuat.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -86,6 +78,17 @@ namespace QuanLyQuanCafe
             this.btnDangXuat.Text = "Đăng Xuất";
             this.btnDangXuat.UseVisualStyleBackColor = true;
             this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
+            // 
+            // pnlChuaFormChild
+            // 
+            this.pnlChuaFormChild.BackgroundImage = global::QuanLyQuanCafe.Properties.Resources.bg2;
+            this.pnlChuaFormChild.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlChuaFormChild.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlChuaFormChild.Location = new System.Drawing.Point(0, 33);
+            this.pnlChuaFormChild.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlChuaFormChild.Name = "pnlChuaFormChild";
+            this.pnlChuaFormChild.Size = new System.Drawing.Size(1827, 889);
+            this.pnlChuaFormChild.TabIndex = 1;
             // 
             // fHome
             // 

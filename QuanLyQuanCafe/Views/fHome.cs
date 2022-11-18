@@ -27,6 +27,7 @@ namespace QuanLyQuanCafe
             childForm.Show();
         }
 
+
         private void resetColor()
         {
             btnTaiKhoan.ForeColor = SystemColors.ControlText;
@@ -57,6 +58,5 @@ namespace QuanLyQuanCafe
             btnTaiKhoan.ForeColor = Color.FromArgb(255, 128, 0);
             showChildForm(formAccount);
         }
-
     }
 }

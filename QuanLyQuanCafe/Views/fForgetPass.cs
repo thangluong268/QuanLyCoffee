@@ -23,11 +23,14 @@ namespace QuanLyQuanCafe.Views
 
         private void fForgetPass_Load(object sender, EventArgs e)
         {
-
+            this.txtMaNV.Focus();
         }
 
         private void btnLayLaiMatKhau_Click(object sender, EventArgs e)
         {
+            FLogin.tenTaiKhoan = "NV00";
+            FLogin.matKhau = "123456";
+
             try
             {
                 string strN = "N";
@@ -44,9 +47,9 @@ namespace QuanLyQuanCafe.Views
                 else
                     MessageBox.Show("Thông tin không hợp lệ!");
             }
-            catch(Exception)
+            catch(SqlException ex )
             {
-                MessageBox.Show("Không lấy lại được mật khẩu, Lỗi!");
+                MessageBox.Show("Không lấy lại được mật khẩu, Lỗi!" + ex);
             }
             
         }

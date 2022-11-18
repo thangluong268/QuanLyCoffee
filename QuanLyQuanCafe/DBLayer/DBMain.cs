@@ -26,7 +26,7 @@ namespace QuanLyQuanCafe.DBLayer
 
         public DataSet GoiThuTucOrHam(string strPro, CommandType ct, params SqlParameter[] param)
         {
-            connStr = $@"Data Source=THANG\SQLEXPRESS; Initial Catalog=QuanLyCaPhe; User Id={FLogin.tenTaiKhoan}; Password={FLogin.matKhau};";
+            connStr = $@"Data Source=(local); Initial Catalog=QuanLyCaPhe; User Id={FLogin.tenTaiKhoan}; Password={FLogin.matKhau};";
             conn = new SqlConnection(connStr);
 
             // Kiểm tra đối tượng kết nối

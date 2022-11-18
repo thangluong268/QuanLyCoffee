@@ -319,6 +319,8 @@
     <None Include="Resources\icons8-cross-mark-button-48.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ezgif-5-8279e91cb6.png" />
+    <None Include="Resources\bg2.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

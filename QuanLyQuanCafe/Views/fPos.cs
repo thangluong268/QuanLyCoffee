@@ -28,6 +28,11 @@ namespace QuanLyQuanCafe.Views
             InitializeComponent();
         }
 
+        public void fPos_Close()
+        {
+            this.Close();
+        }
+
         private void fPos_Load(object sender, EventArgs e)
         {
             LoadMenu();

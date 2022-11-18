@@ -131,6 +131,7 @@ namespace QuanLyQuanCafe
             // 
             // pnlChuaFormChild
             // 
+            this.pnlChuaFormChild.BackgroundImage = global::QuanLyQuanCafe.Properties.Resources.bg2;
             this.pnlChuaFormChild.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlChuaFormChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlChuaFormChild.Location = new System.Drawing.Point(0, 31);

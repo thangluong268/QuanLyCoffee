@@ -238,7 +238,6 @@ D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\bin\Debug\
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.csproj.AssemblyReference.cache
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.Views.MenuCard.resources
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.Views.theOrder.resources
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.Properties.Resources.resources
@@ -265,3 +264,4 @@ D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.pdb
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.fProfile.resources
 D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.fHome.resources
+D:\ChuongTrinhHoc\HeQuanTriCSDL\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.csproj.AssemblyReference.cache
