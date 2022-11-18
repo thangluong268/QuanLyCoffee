@@ -121,9 +121,7 @@ namespace QuanLyQuanCafe
                         blAccount.DoiMatKhau(this.txtUserName.Text, tenTaiKhoan, this.txtPass.Text, this.txtNewPass.Text);
                         MessageBox.Show("Đã đổi xong!");
 
-                        this.Close();
-                        FLogin formLogin = new FLogin();
-                        formLogin.ShowDialog();
+                        ParentForm.Close();
                     }
                 }
                 catch (SqlException)

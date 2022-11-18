@@ -55,14 +55,17 @@ namespace QuanLyQuanCafe
                 else if (check == 1)
                 {
                     Form formManager = new fMain();
+                    this.Hide();
                     formManager.ShowDialog();
                 }
                 else if (check == 2)
                 {
                     fProfile.maNV = txtUsername.Text.Trim();
                     Form formStaff = new fHome();
+                    this.Hide();
                     formStaff.ShowDialog();
                 }
+                this.Show();
             }
             catch(Exception)
             {
@@ -94,7 +97,9 @@ namespace QuanLyQuanCafe
         private void btnForgetPass_Click(object sender, EventArgs e)
         {
             fForgetPass form = new fForgetPass();
+            this.Hide();
             form.ShowDialog();
+            this.Show();
         }
     }
 }
