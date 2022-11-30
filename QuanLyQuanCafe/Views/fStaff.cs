@@ -271,15 +271,14 @@ namespace QuanLyQuanCafe.Views
 
                     MessageBox.Show("Đã sửa xong!");
                 }
-                catch (SqlException)
+                catch (SqlException ex)
                 {
-                    MessageBox.Show("Không sửa được. Lỗi rồi!");
+                    MessageBox.Show("Không sửa được. Lỗi rồi!" + ex);
                 }
 
             }
             
             showChildPanel(pnlEditNV, pnlToolNV);
-            LoadData();
         }
 
         private void dgvStaff_CellClick(object sender, DataGridViewCellEventArgs e)

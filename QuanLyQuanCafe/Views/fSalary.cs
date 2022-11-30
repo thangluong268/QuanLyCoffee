@@ -54,10 +54,7 @@ namespace QuanLyQuanCafe.Views
         {
             try
             {
-                for(int i = 0; i < dgvSalary.Rows.Count - 1; i++)
-                {
-                    blSalary.TinhLuong(dgvSalary.Rows[i].Cells[0].Value.ToString());
-                }
+                blSalary.TinhLuong();
                 MessageBox.Show("Tính lương thành công!");
             }
             catch(Exception)

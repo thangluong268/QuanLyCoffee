@@ -321,7 +321,7 @@ namespace QuanLyQuanCafe.Views
             {
                 if (lstGoiMon[i].maMon == maMon && lstGoiMon[i].maBan == maBan) 
                     index = i;
-                if (index != -1) 
+                if (index != -1)
                     lstGoiMon[i] = lstGoiMon[i + 1];
             }
             lblTongTien.Text = (Int32.Parse(lblTongTien.Text) - lstGoiMon[index].donGia * lstGoiMon[index].soLuong).ToString();

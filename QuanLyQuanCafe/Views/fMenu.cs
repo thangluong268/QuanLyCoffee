@@ -84,7 +84,6 @@ namespace QuanLyQuanCafe
                 txtTenMon.ResetText();
                 txtDonGia.ResetText();
                 cbDVT.ResetText();
-                cbTrangThai.ResetText();
 
                 this.btnThem.Enabled = true;
                 this.btnSua.Enabled = true;

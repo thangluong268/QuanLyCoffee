@@ -21,10 +21,10 @@ namespace QuanLyQuanCafe.BSLayer
             return db.GoiThuTucOrHam("p_LoadTinhLuong", CommandType.StoredProcedure);
         }
 
-        public DataSet TinhLuong(string MaNV)
+
+        public DataSet TinhLuong()
         {
-            return db.GoiThuTucOrHam("p_TinhLuong", CommandType.StoredProcedure,
-                new SqlParameter("@manv", MaNV));
+            return db.GoiThuTucOrHam("p_TinhLuong", CommandType.StoredProcedure);
         }
     }
 }

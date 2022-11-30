@@ -48,30 +48,28 @@ namespace QuanLyQuanCafe.Views
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.MediumAquamarine;
-            this.label12.Location = new System.Drawing.Point(18, 20);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(24, 25);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(372, 49);
+            this.label12.Size = new System.Drawing.Size(460, 62);
             this.label12.TabIndex = 38;
             this.label12.Text = "Lấy Lại Mật Khẩu";
             // 
             // txtSDT
             // 
             this.txtSDT.Font = new System.Drawing.Font("Times New Roman", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT.Location = new System.Drawing.Point(617, 302);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSDT.Location = new System.Drawing.Point(823, 372);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(517, 57);
+            this.txtSDT.Size = new System.Drawing.Size(688, 69);
             this.txtSDT.TabIndex = 32;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 32F);
-            this.label14.Location = new System.Drawing.Point(279, 307);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(372, 378);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(281, 49);
+            this.label14.Size = new System.Drawing.Size(356, 61);
             this.label14.TabIndex = 31;
             this.label14.Text = "Số Điện Thoại:";
             // 
@@ -79,20 +77,19 @@ namespace QuanLyQuanCafe.Views
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 32F);
-            this.label13.Location = new System.Drawing.Point(279, 211);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(372, 260);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(222, 49);
+            this.label13.Size = new System.Drawing.Size(281, 61);
             this.label13.TabIndex = 30;
             this.label13.Text = "Họ Và Tên:";
             // 
             // txtHoTen
             // 
             this.txtHoTen.Font = new System.Drawing.Font("Times New Roman", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoTen.Location = new System.Drawing.Point(617, 207);
-            this.txtHoTen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtHoTen.Location = new System.Drawing.Point(823, 255);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(517, 57);
+            this.txtHoTen.Size = new System.Drawing.Size(688, 69);
             this.txtHoTen.TabIndex = 29;
             // 
             // pnlEditAccount
@@ -107,19 +104,19 @@ namespace QuanLyQuanCafe.Views
             this.pnlEditAccount.Controls.Add(this.label14);
             this.pnlEditAccount.Controls.Add(this.label13);
             this.pnlEditAccount.Controls.Add(this.txtHoTen);
-            this.pnlEditAccount.Location = new System.Drawing.Point(2, 9);
-            this.pnlEditAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlEditAccount.Location = new System.Drawing.Point(3, 11);
+            this.pnlEditAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlEditAccount.Name = "pnlEditAccount";
-            this.pnlEditAccount.Size = new System.Drawing.Size(1412, 600);
+            this.pnlEditAccount.Size = new System.Drawing.Size(1883, 738);
             this.pnlEditAccount.TabIndex = 16;
             // 
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(1130, 509);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBack.Location = new System.Drawing.Point(1507, 626);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(256, 51);
+            this.btnBack.Size = new System.Drawing.Size(341, 63);
             this.btnBack.TabIndex = 43;
             this.btnBack.Text = "Quay lại";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -128,30 +125,29 @@ namespace QuanLyQuanCafe.Views
             // txtMaNV
             // 
             this.txtMaNV.Font = new System.Drawing.Font("Times New Roman", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNV.Location = new System.Drawing.Point(617, 119);
-            this.txtMaNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMaNV.Location = new System.Drawing.Point(823, 146);
+            this.txtMaNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaNV.Name = "txtMaNV";
-            this.txtMaNV.Size = new System.Drawing.Size(517, 57);
+            this.txtMaNV.Size = new System.Drawing.Size(688, 69);
             this.txtMaNV.TabIndex = 42;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 32F);
-            this.label1.Location = new System.Drawing.Point(279, 124);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(372, 153);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 49);
+            this.label1.Size = new System.Drawing.Size(202, 61);
             this.label1.TabIndex = 41;
             this.label1.Text = "Mã NV:";
             // 
             // btnLayLaiMatKhau
             // 
             this.btnLayLaiMatKhau.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLayLaiMatKhau.Location = new System.Drawing.Point(754, 392);
-            this.btnLayLaiMatKhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLayLaiMatKhau.Location = new System.Drawing.Point(961, 482);
+            this.btnLayLaiMatKhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLayLaiMatKhau.Name = "btnLayLaiMatKhau";
-            this.btnLayLaiMatKhau.Size = new System.Drawing.Size(256, 51);
+            this.btnLayLaiMatKhau.Size = new System.Drawing.Size(385, 63);
             this.btnLayLaiMatKhau.TabIndex = 40;
             this.btnLayLaiMatKhau.Text = "Lấy Lại Mật Khẩu";
             this.btnLayLaiMatKhau.UseVisualStyleBackColor = true;
@@ -161,20 +157,19 @@ namespace QuanLyQuanCafe.Views
             // 
             this.lblMatKhau.AutoSize = true;
             this.lblMatKhau.Font = new System.Drawing.Font("Times New Roman", 32F);
-            this.lblMatKhau.Location = new System.Drawing.Point(279, 506);
-            this.lblMatKhau.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMatKhau.Location = new System.Drawing.Point(372, 623);
             this.lblMatKhau.Name = "lblMatKhau";
-            this.lblMatKhau.Size = new System.Drawing.Size(391, 49);
+            this.lblMatKhau.Size = new System.Drawing.Size(495, 61);
             this.lblMatKhau.TabIndex = 39;
             this.lblMatKhau.Text = "Mật khẩu của bạn là: ";
             // 
             // fForgetPass
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 609);
+            this.ClientSize = new System.Drawing.Size(1817, 762);
             this.Controls.Add(this.pnlEditAccount);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fForgetPass";
             this.Text = "fForgetPass";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
